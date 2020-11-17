@@ -137,7 +137,7 @@ def savePictures(file, slide, num, boo):
             os.remove("imageFile.jpg")
 
 
-frame = tk.Frame(root, bg='#9ec9da', height=HEIGHT, width=WIDTH)
+frame = tk.Frame(root, bg='#53ecff', height=HEIGHT, width=WIDTH)
 frame.place(relx=.25, rely=.02, relwidth=.7, relheight=.62)
 
 checked = tk.BooleanVar()
@@ -145,34 +145,34 @@ checked.set(False)
 checkBox3 = tk.Checkbutton(frame)
 checkBox3.config(text="Images on a separate Word Document",
                  command=imageSetting, anchor=tk.W,
-                 bg='#9ec9da', var=checked)
+                 bg='#53ecff', var=checked)
 checkBox3.place(relx=.03, rely=.04)
 
-inputFileFirst = tk.Label(frame, text="1.", bg='#9ec9da')
+inputFileFirst = tk.Label(frame, text="1.", bg='#53ecff')
 inputFileFirst.place(relx=0.03, rely=.28)
 
 inputFile = tk.Button(frame, text="Click", command=pptxGet)
 inputFile.place(relx=0.092, rely=.27, relwidth=.12)
 
-inputFileLabel = tk.Label(frame, text="to select a .pptx file to convert", bg='#9ec9da')
+inputFileLabel = tk.Label(frame, text="to select a .pptx file to convert", bg='#53ecff')
 inputFileLabel.place(relx=0.21, rely=.285)
 
-outputFileSecond = tk.Label(frame, text="2.", bg='#9ec9da')
+outputFileSecond = tk.Label(frame, text="2.", bg='#53ecff')
 outputFileSecond.place(relx=0.03, rely=.54)
 
 outputFile = tk.Button(frame, text="Click", command=docxGet)
 outputFile.place(relx=0.092, rely=.53, relwidth=.12)
 
-outputFileLabel = tk.Label(frame, text="to create or select a .docx file to save to", bg='#9ec9da')
+outputFileLabel = tk.Label(frame, text="to create or select a .docx file to save to", bg='#53ecff')
 outputFileLabel.place(relx=0.21, rely=.554)
 
-programRunnerThird = tk.Label(frame, text="3.", bg='#9ec9da')
+programRunnerThird = tk.Label(frame, text="3.", bg='#53ecff')
 programRunnerThird.place(relx=0.03, rely=.79)
 
 programRunner = tk.Button(frame, text="Click", command=program)
 programRunner.place(relx=0.092, rely=.78, relwidth=.12)
 
-programRunnerLabel = tk.Label(frame, text="to run the program", bg='#9ec9da')
+programRunnerLabel = tk.Label(frame, text="to run the program", bg='#53ecff')
 programRunnerLabel.place(relx=0.21, rely=.795)
 
 quitButton = tk.Button(frame, text="exit", command=root.quit)
